@@ -1,0 +1,17 @@
+.BarraSuperior{
+    background-color: orange;
+}
+.BarraSuperior ul{
+    display: inline-flex;
+}
+.BarraSuperior li{
+    padding: 10px;
+    list-style: none;
+}
+.BarraSuperior li:hover{
+    background-color: rgb(224, 224, 238);
+}
+.BarraSuperior a{
+    color: white;
+    font-size: 30px;
+}
