@@ -1,0 +1,95 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 55, 99);
+    
+    }
+    .cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(225, 221, 216);
+    
+    }
+    
+    .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+#conteCarrusel{
+    height: 500px;
+    overflow: hidden;
+}
+
+#tc1{
+    height: 100%;
+    background-color: yellow;
+}
+
+#tc2{
+    height: 100%;
+    background-color: rgb(40, 18, 138);
+}
+
+#tc3{
+    height: 100%;
+    background-color: red;
+}
+
+
+.carrusel{
+    height: 500px;
+    position: relative;
+}
+.tc{
+    background-color: rgb(160, 169, 182);
+    height: 100%;
+}
+.fc{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: gray;
+}
+
+#contePuntos{
+    background-color: rgb(36, 55, 99);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#contepuntos > a{
+    color: white;
+    font-size: 1.5em;
+    font-style: none;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
