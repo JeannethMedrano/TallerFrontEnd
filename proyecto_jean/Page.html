@@ -4,29 +4,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./Styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Proyecto JM</title>
     <script src="https://kit.fontawesome.com/beae2e50f1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="cover">
-        <section class="home">
-            <img src="LogoGatoS" alt="Logo GatoS">
+    <main>
+        <div class="cover">
+            <section class="home">
+                <img src="./img/LogoGatoS.png" alt="LogoGatoS">
+                <img src="img/usuario.png" alt="Usuario" id="btnUsuario" class="btnUsuario">
             <div class="menu">
-                <p>Sobre Nosotros</p>
-                <p>Productos</p>
-                <p>Servicios</p>
-                <img src="usuario" alt="Usuario">
-                <img src="busqueda" alt="Búsqueda">
-            </div>
-        </section>
-    </div>
+                    <p>Sobre Nosotros</p>
+                    <p>Productos</p>
+                    <p>Servicios</p>
+                    <div class="container" class="btn">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Buscar">
 
+                    </div>
+                </div>
+            </section>
+        </div>    
+    </main>
     <div id="conteCarrusel">
         <div class="carrusel" id="carrusel1">
             <div class="tc" id="tc1">
                 <img src="./img/cam3.png" alt="img1Carrusel">
+                <div><h2>SOBRE NOSOTROS</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non nunc sit amet felis consequat consectetur ut in tellus. Cras id gravida odio. Nullam a leo vitae elit congue elementum id vel ipsum. Nulla fringilla egestas mi, eget pulvinar nibh pharetra non. Donec blandit ornare turpis, sed aliquet massa tristique et. Aliquam id pretium nulla, a tempus lorem. Nullam lacus turpis, pretium quis tortor eget, volutpat ornare felis. Aenean et neque ex. Cras tempus metus ut turpis maximus, a consectetur quam efficitur. Morbi ante sem, maximus at rutrum ac, gravida vitae dui. Phasellus porta odio nec eleifend elementum. Suspendisse eu libero mi. Quisque dictum est sed orci pharetra blandit. Ut quis elit risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+                <div></div>
             </div>
             <div class="fc">
                 <a href="#carrusel3">
@@ -41,6 +48,7 @@
         <div class="carrusel" id="carrusel2">
             <div class="tc" id="tc2">
                 <img src="./img/pexels-towfiqu-barbhuiya-13156207.jpg" alt="img1Carrusel2">
+                <div><h2>PRODUCTOS</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non nunc sit amet felis consequat consectetur ut in tellus. Cras id gravida odio. Nullam a leo vitae elit congue elementum id vel ipsum. Nulla fringilla egestas mi, eget pulvinar nibh pharetra non. Donec blandit ornare turpis, sed aliquet massa tristique et. Aliquam id pretium nulla, a tempus lorem. Nullam lacus turpis, pretium quis tortor eget, volutpat ornare felis. Aenean et neque ex. Cras tempus metus ut turpis maximus, a consectetur quam efficitur. Morbi ante sem, maximus at rutrum ac, gravida vitae dui. Phasellus porta odio nec eleifend elementum. Suspendisse eu libero mi. Quisque dictum est sed orci pharetra blandit. Ut quis elit risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
             </div>
             <div class="fc">
                 <a href="#carrusel1">
@@ -54,7 +62,9 @@
 
         <div class="carrusel" id="carrusel3">
             <div class="tc" id="tc3">
+                
                 <img src="./img/pexels-free-stock-7463021.jpg" alt="img1Carrusel3">
+                <div><h2>SERVICIOS</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non nunc sit amet felis consequat consectetur ut in tellus. Cras id gravida odio. Nullam a leo vitae elit congue elementum id vel ipsum. Nulla fringilla egestas mi, eget pulvinar nibh pharetra non. Donec blandit ornare turpis, sed aliquet massa tristique et. Aliquam id pretium nulla, a tempus lorem. Nullam lacus turpis, pretium quis tortor eget, volutpat ornare felis. Aenean et neque ex. Cras tempus metus ut turpis maximus, a consectetur quam efficitur. Morbi ante sem, maximus at rutrum ac, gravida vitae dui. Phasellus porta odio nec eleifend elementum. Suspendisse eu libero mi. Quisque dictum est sed orci pharetra blandit. Ut quis elit risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
             </div>
             <div class="fc">
                 <a href="#carrusel2">
@@ -68,10 +78,21 @@
     </div>
 
     <div id="contePuntos">
-        <a href="#carrusel1">.</a>
-        <a href="#carrusel2">.</a>
-        <a href="#carrusel3">.</a>
+        <a href="#carrusel1"><i class="fa-solid fa-grip-lines"></i></a>
+        <a href="#carrusel2"><i class="fa-solid fa-grip-lines"></i></a>
+        <a href="#carrusel3"><i class="fa-solid fa-grip-lines"></i></a>
     </div>
+    <script>
+        // Obtener referencia al botón de usuario por su id
+        var btnUsuario = document.getElementById("btnUsuario");
+
+        // Agregar evento de clic al botón
+        btnUsuario.addEventListener("click", function() {
+            // Acción a realizar cuando se haga clic en el botón de usuario
+            window.location.href = "file:///C:/xampp/htdocs/proyecto_jean/login.html";
+            // Puedes reemplazar el código dentro de esta función con la lógica que deseas ejecutar al hacer clic en el botón
+        });
+    </script>
 </body>
 
 </html>
